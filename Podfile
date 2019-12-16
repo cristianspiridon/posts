@@ -7,7 +7,10 @@ target 'PostsAndComments' do
 
   # Pods for PostsAndComments
 
-pod 'RealmSwift'
+  pod 'SwiftLint'
+  pod 'SwiftFormat/CLI'
+  pod 'RealmSwift'
+  pod 'PromiseKit'
 
   target 'PostsAndCommentsTests' do
     inherit! :search_paths

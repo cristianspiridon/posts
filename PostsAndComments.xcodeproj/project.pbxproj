@@ -9,16 +9,36 @@
 /* Begin PBXBuildFile section */
 		2D55225C5EA7F7A4694AC3ED /* Pods_PostsAndComments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5AF4C8C342C3A1D1A543CD /* Pods_PostsAndComments.framework */; };
 		6C0F102EC7CA1654370F9100 /* Pods_PostsAndCommentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9AC14C95C0D6C9F0E73B7B /* Pods_PostsAndCommentsTests.framework */; };
-		7643474C23A79C0400332D63 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643474B23A79C0400332D63 /* PostsTableViewController.swift */; };
 		7643474E23A79D7700332D63 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643474D23A79D7700332D63 /* PostsTableViewCell.swift */; };
+		7643475C23A7A1FD00332D63 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475223A7A1FD00332D63 /* APIService.swift */; };
+		7643475D23A7A1FD00332D63 /* APIServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475323A7A1FD00332D63 /* APIServiceProvider.swift */; };
+		7643475E23A7A1FD00332D63 /* JsonplaceholderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475523A7A1FD00332D63 /* JsonplaceholderAPI.swift */; };
+		7643475F23A7A1FD00332D63 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475723A7A1FD00332D63 /* UIColor+Extension.swift */; };
+		7643476023A7A1FD00332D63 /* StyleColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475823A7A1FD00332D63 /* StyleColors.swift */; };
+		7643476123A7A1FD00332D63 /* StyleFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475923A7A1FD00332D63 /* StyleFonts.swift */; };
+		7643476223A7A1FD00332D63 /* StyleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475A23A7A1FD00332D63 /* StyleBuilder.swift */; };
+		7643476323A7A1FD00332D63 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643475B23A7A1FD00332D63 /* Style.swift */; };
+		7643476623A7A32100332D63 /* RealmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643476423A7A32100332D63 /* RealmService.swift */; };
+		7643476723A7A32100332D63 /* RealmProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643476523A7A32100332D63 /* RealmProvider.swift */; };
+		7643477023A7AEEB00332D63 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643476F23A7AEEB00332D63 /* Post.swift */; };
 		7654DEDE23A7975400D62179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654DEDD23A7975400D62179 /* AppDelegate.swift */; };
 		7654DEE023A7975400D62179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654DEDF23A7975400D62179 /* SceneDelegate.swift */; };
 		7654DEE523A7975400D62179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7654DEE323A7975400D62179 /* Main.storyboard */; };
 		7654DEE723A7975700D62179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7654DEE623A7975700D62179 /* Assets.xcassets */; };
 		7654DEEA23A7975700D62179 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7654DEE823A7975700D62179 /* LaunchScreen.storyboard */; };
 		7654DEF523A7975700D62179 /* PostsAndCommentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654DEF423A7975700D62179 /* PostsAndCommentsTests.swift */; };
-		7654DF0023A7977000D62179 /* Branding in Resources */ = {isa = PBXBuildFile; fileRef = 7654DEFF23A7977000D62179 /* Branding */; };
-		7654DF0223A7977D00D62179 /* Network Layer in Resources */ = {isa = PBXBuildFile; fileRef = 7654DF0123A7977D00D62179 /* Network Layer */; };
+		76598A9E23A7E6B300038CD5 /* PostsAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598A9D23A7E6B300038CD5 /* PostsAPIWorker.swift */; };
+		76598AA023A7FE4600038CD5 /* CommentsAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598A9F23A7FE4600038CD5 /* CommentsAPIWorker.swift */; };
+		76598AA223A8007800038CD5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AA123A8007800038CD5 /* Comment.swift */; };
+		76598AB623A80A5400038CD5 /* PostTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AB023A80A5400038CD5 /* PostTableRouter.swift */; };
+		76598AB823A80A5400038CD5 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AB223A80A5400038CD5 /* PostTableViewController.swift */; };
+		76598AB923A80A5400038CD5 /* PostTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AB323A80A5400038CD5 /* PostTableInteractor.swift */; };
+		7662E22A23A8245C00CC671C /* CommentsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22423A8245C00CC671C /* CommentsWorker.swift */; };
+		7662E22B23A8245C00CC671C /* CommentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22523A8245C00CC671C /* CommentsRouter.swift */; };
+		7662E22C23A8245C00CC671C /* CommentsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22623A8245C00CC671C /* CommentsModels.swift */; };
+		7662E22D23A8245C00CC671C /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22723A8245C00CC671C /* CommentsViewController.swift */; };
+		7662E22E23A8245C00CC671C /* CommentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22823A8245C00CC671C /* CommentsInteractor.swift */; };
+		76ED6EE423A8396C007A9AF9 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED6EE323A8396C007A9AF9 /* CommentsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +54,18 @@
 /* Begin PBXFileReference section */
 		0B5AF4C8C342C3A1D1A543CD /* Pods_PostsAndComments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostsAndComments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BC69E8FDCBD8B2D9F967E /* Pods-PostsAndComments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndComments.release.xcconfig"; path = "Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments.release.xcconfig"; sourceTree = "<group>"; };
-		7643474B23A79C0400332D63 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
 		7643474D23A79D7700332D63 /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
+		7643475223A7A1FD00332D63 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		7643475323A7A1FD00332D63 /* APIServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServiceProvider.swift; sourceTree = "<group>"; };
+		7643475523A7A1FD00332D63 /* JsonplaceholderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonplaceholderAPI.swift; sourceTree = "<group>"; };
+		7643475723A7A1FD00332D63 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		7643475823A7A1FD00332D63 /* StyleColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleColors.swift; sourceTree = "<group>"; };
+		7643475923A7A1FD00332D63 /* StyleFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleFonts.swift; sourceTree = "<group>"; };
+		7643475A23A7A1FD00332D63 /* StyleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleBuilder.swift; sourceTree = "<group>"; };
+		7643475B23A7A1FD00332D63 /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		7643476423A7A32100332D63 /* RealmService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmService.swift; sourceTree = "<group>"; };
+		7643476523A7A32100332D63 /* RealmProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmProvider.swift; sourceTree = "<group>"; };
+		7643476F23A7AEEB00332D63 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7654DEDA23A7975400D62179 /* PostsAndComments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostsAndComments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7654DEDD23A7975400D62179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7654DEDF23A7975400D62179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,8 +76,18 @@
 		7654DEF023A7975700D62179 /* PostsAndCommentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostsAndCommentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7654DEF423A7975700D62179 /* PostsAndCommentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAndCommentsTests.swift; sourceTree = "<group>"; };
 		7654DEF623A7975700D62179 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7654DEFF23A7977000D62179 /* Branding */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Branding; sourceTree = "<group>"; };
-		7654DF0123A7977D00D62179 /* Network Layer */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Network Layer"; sourceTree = "<group>"; };
+		76598A9D23A7E6B300038CD5 /* PostsAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPIWorker.swift; sourceTree = "<group>"; };
+		76598A9F23A7FE4600038CD5 /* CommentsAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsAPIWorker.swift; sourceTree = "<group>"; };
+		76598AA123A8007800038CD5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		76598AB023A80A5400038CD5 /* PostTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableRouter.swift; sourceTree = "<group>"; };
+		76598AB223A80A5400038CD5 /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
+		76598AB323A80A5400038CD5 /* PostTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableInteractor.swift; sourceTree = "<group>"; };
+		7662E22423A8245C00CC671C /* CommentsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsWorker.swift; sourceTree = "<group>"; };
+		7662E22523A8245C00CC671C /* CommentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRouter.swift; sourceTree = "<group>"; };
+		7662E22623A8245C00CC671C /* CommentsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModels.swift; sourceTree = "<group>"; };
+		7662E22723A8245C00CC671C /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
+		7662E22823A8245C00CC671C /* CommentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInteractor.swift; sourceTree = "<group>"; };
+		76ED6EE323A8396C007A9AF9 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
 		8A9AC14C95C0D6C9F0E73B7B /* Pods_PostsAndCommentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostsAndCommentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9947EAEC395E60252AC4E10A /* Pods-PostsAndComments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndComments.debug.xcconfig"; path = "Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments.debug.xcconfig"; sourceTree = "<group>"; };
 		B6820AB8A9299D7ABD4CB0CA /* Pods-PostsAndCommentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndCommentsTests.release.xcconfig"; path = "Target Support Files/Pods-PostsAndCommentsTests/Pods-PostsAndCommentsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +114,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7643475023A7A1FD00332D63 /* Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				7643475123A7A1FD00332D63 /* APIEngine */,
+				7643475423A7A1FD00332D63 /* Configurations */,
+				76598ABA23A80B6F00038CD5 /* Workers */,
+			);
+			path = "Network Layer";
+			sourceTree = "<group>";
+		};
+		7643475123A7A1FD00332D63 /* APIEngine */ = {
+			isa = PBXGroup;
+			children = (
+				7643475223A7A1FD00332D63 /* APIService.swift */,
+				7643475323A7A1FD00332D63 /* APIServiceProvider.swift */,
+			);
+			path = APIEngine;
+			sourceTree = "<group>";
+		};
+		7643475423A7A1FD00332D63 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				7643475523A7A1FD00332D63 /* JsonplaceholderAPI.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		7643475623A7A1FD00332D63 /* Branding */ = {
+			isa = PBXGroup;
+			children = (
+				7643475723A7A1FD00332D63 /* UIColor+Extension.swift */,
+				7643475823A7A1FD00332D63 /* StyleColors.swift */,
+				7643475923A7A1FD00332D63 /* StyleFonts.swift */,
+				7643475A23A7A1FD00332D63 /* StyleBuilder.swift */,
+				7643475B23A7A1FD00332D63 /* Style.swift */,
+			);
+			path = Branding;
+			sourceTree = "<group>";
+		};
+		7643476823A7AAEF00332D63 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				7643476F23A7AEEB00332D63 /* Post.swift */,
+				76598AA123A8007800038CD5 /* Comment.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
 		7654DED123A7975400D62179 = {
 			isa = PBXGroup;
 			children = (
@@ -97,10 +185,10 @@
 		7654DEDC23A7975400D62179 /* PostsAndComments */ = {
 			isa = PBXGroup;
 			children = (
-				76DE1AA923A79AEE00975698 /* Persistence */,
-				7654DEFF23A7977000D62179 /* Branding */,
-				7654DF0123A7977D00D62179 /* Network Layer */,
+				7643475623A7A1FD00332D63 /* Branding */,
 				7654DF0323A7979C00D62179 /* Scene */,
+				7643475023A7A1FD00332D63 /* Network Layer */,
+				76DE1AA923A79AEE00975698 /* Persistence */,
 				7654DEDD23A7975400D62179 /* AppDelegate.swift */,
 				7654DEDF23A7975400D62179 /* SceneDelegate.swift */,
 				7654DEE323A7975400D62179 /* Main.storyboard */,
@@ -123,23 +211,51 @@
 		7654DF0323A7979C00D62179 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				7654DF0423A797AA00D62179 /* posts */,
+				76598AAD23A80A2500038CD5 /* postsView */,
+				7662E22223A8240D00CC671C /* commentsView */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		7654DF0423A797AA00D62179 /* posts */ = {
+		76598AAD23A80A2500038CD5 /* postsView */ = {
 			isa = PBXGroup;
 			children = (
-				7643474B23A79C0400332D63 /* PostsTableViewController.swift */,
+				76598AB223A80A5400038CD5 /* PostTableViewController.swift */,
 				7643474D23A79D7700332D63 /* PostsTableViewCell.swift */,
+				76598AB323A80A5400038CD5 /* PostTableInteractor.swift */,
+				76598AB023A80A5400038CD5 /* PostTableRouter.swift */,
 			);
-			path = posts;
+			path = postsView;
+			sourceTree = "<group>";
+		};
+		76598ABA23A80B6F00038CD5 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				76598A9D23A7E6B300038CD5 /* PostsAPIWorker.swift */,
+				76598A9F23A7FE4600038CD5 /* CommentsAPIWorker.swift */,
+			);
+			path = Workers;
+			sourceTree = "<group>";
+		};
+		7662E22223A8240D00CC671C /* commentsView */ = {
+			isa = PBXGroup;
+			children = (
+				7662E22723A8245C00CC671C /* CommentsViewController.swift */,
+				76ED6EE323A8396C007A9AF9 /* CommentsTableViewCell.swift */,
+				7662E22823A8245C00CC671C /* CommentsInteractor.swift */,
+				7662E22423A8245C00CC671C /* CommentsWorker.swift */,
+				7662E22623A8245C00CC671C /* CommentsModels.swift */,
+				7662E22523A8245C00CC671C /* CommentsRouter.swift */,
+			);
+			path = commentsView;
 			sourceTree = "<group>";
 		};
 		76DE1AA923A79AEE00975698 /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				7643476823A7AAEF00332D63 /* Objects */,
+				7643476523A7A32100332D63 /* RealmProvider.swift */,
+				7643476423A7A32100332D63 /* RealmService.swift */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -172,6 +288,7 @@
 			buildConfigurationList = 7654DEF923A7975700D62179 /* Build configuration list for PBXNativeTarget "PostsAndComments" */;
 			buildPhases = (
 				A6CAE3B630092CBB0D49B02A /* [CP] Check Pods Manifest.lock */,
+				76598ABB23A8101800038CD5 /* ShellScript */,
 				7654DED623A7975400D62179 /* Sources */,
 				7654DED723A7975400D62179 /* Frameworks */,
 				7654DED823A7975400D62179 /* Resources */,
@@ -248,9 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7654DF0223A7977D00D62179 /* Network Layer in Resources */,
 				7654DEEA23A7975700D62179 /* LaunchScreen.storyboard in Resources */,
-				7654DF0023A7977000D62179 /* Branding in Resources */,
 				7654DEE723A7975700D62179 /* Assets.xcassets in Resources */,
 				7654DEE523A7975400D62179 /* Main.storyboard in Resources */,
 			);
@@ -287,6 +402,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		76598ABB23A8101800038CD5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"PostsAndComments\"\n";
 		};
 		831A12FF9674D1DCBBF1FE37 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -334,10 +466,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76598AA023A7FE4600038CD5 /* CommentsAPIWorker.swift in Sources */,
+				7662E22C23A8245C00CC671C /* CommentsModels.swift in Sources */,
+				7643475E23A7A1FD00332D63 /* JsonplaceholderAPI.swift in Sources */,
+				76598AB923A80A5400038CD5 /* PostTableInteractor.swift in Sources */,
+				7662E22E23A8245C00CC671C /* CommentsInteractor.swift in Sources */,
+				7643476223A7A1FD00332D63 /* StyleBuilder.swift in Sources */,
 				7654DEDE23A7975400D62179 /* AppDelegate.swift in Sources */,
-				7643474C23A79C0400332D63 /* PostsTableViewController.swift in Sources */,
+				76598A9E23A7E6B300038CD5 /* PostsAPIWorker.swift in Sources */,
+				7643475C23A7A1FD00332D63 /* APIService.swift in Sources */,
+				7662E22B23A8245C00CC671C /* CommentsRouter.swift in Sources */,
+				7643475D23A7A1FD00332D63 /* APIServiceProvider.swift in Sources */,
 				7654DEE023A7975400D62179 /* SceneDelegate.swift in Sources */,
+				7643476323A7A1FD00332D63 /* Style.swift in Sources */,
 				7643474E23A79D7700332D63 /* PostsTableViewCell.swift in Sources */,
+				7643476623A7A32100332D63 /* RealmService.swift in Sources */,
+				7643477023A7AEEB00332D63 /* Post.swift in Sources */,
+				7643476723A7A32100332D63 /* RealmProvider.swift in Sources */,
+				7662E22A23A8245C00CC671C /* CommentsWorker.swift in Sources */,
+				7643476023A7A1FD00332D63 /* StyleColors.swift in Sources */,
+				76598AB823A80A5400038CD5 /* PostTableViewController.swift in Sources */,
+				76598AA223A8007800038CD5 /* Comment.swift in Sources */,
+				7643476123A7A1FD00332D63 /* StyleFonts.swift in Sources */,
+				76598AB623A80A5400038CD5 /* PostTableRouter.swift in Sources */,
+				7662E22D23A8245C00CC671C /* CommentsViewController.swift in Sources */,
+				7643475F23A7A1FD00332D63 /* UIColor+Extension.swift in Sources */,
+				76ED6EE423A8396C007A9AF9 /* CommentsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

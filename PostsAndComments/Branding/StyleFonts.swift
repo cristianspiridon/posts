@@ -13,12 +13,20 @@ extension UIFont {
     static var title: UIFont {
         return UIFont.systemFont(ofSize: 28, weight: UIFont.Weight.bold)
     }
+
     static var body: UIFont {
         return UIFont.systemFont(ofSize: 17, weight: UIFont.Weight.regular)
     }
+
+    static var smallMediumRegular: UIFont {
+        return UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.regular)
+    }
+
     static var subhead: UIFont {
         return UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.semibold)
     }
+
+    static var footnote: UIFont {
+        return UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.regular)
+    }
 }
-
-

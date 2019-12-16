@@ -35,13 +35,16 @@ extension Style {
 
     // Here is an enumaration of style type you can apply to textfields, textinputs, labels, buttons
     enum Styles {
-         /// medium 28pt
+        /// medium 28pt
         case title(color: UIColor, backgroundColor: UIColor = UIColor.clear)
         /// regular 17pt
         case body(color: UIColor, backgroundColor: UIColor = UIColor.clear)
+        /// smalMediumRegular 16pt
+        case smallMediumRegular(color: UIColor, backgroundColor: UIColor = UIColor.clear)
         /// semibold 15pt
         case subhead(color: UIColor, backgroundColor: UIColor = UIColor.clear)
-    
+        // footnote 13pt
+        case footnote(color: UIColor, backgroundColor: UIColor = UIColor.clear)
     }
 }
 
@@ -54,9 +57,15 @@ extension Style.Styles {
         /// regular 17pt
         case let .body(color, backgroundColor):
             return Style.StyleAttributes(font: .body, color: color, backgroundColor: backgroundColor)
-         /// semibold 15pt
+        /// subhead semibold 16pt
+        case let .smallMediumRegular(color, backgroundColor):
+            return Style.StyleAttributes(font: .smallMediumRegular, color: color, backgroundColor: backgroundColor)
+        /// semibold 15pt
         case let .subhead(color, backgroundColor):
             return Style.StyleAttributes(font: .subhead, color: color, backgroundColor: backgroundColor)
+        /// footnote regular 13pt
+        case let .footnote(color, backgroundColor):
+            return Style.StyleAttributes(font: .footnote, color: color, backgroundColor: backgroundColor)
         }
     }
 }

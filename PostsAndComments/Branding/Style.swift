@@ -76,5 +76,4 @@ public class Style {
         button.layer.cornerRadius = button.layer.frame.height / 2
         button.layer.masksToBounds = true
     }
-
 }

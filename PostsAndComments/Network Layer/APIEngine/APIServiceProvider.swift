@@ -17,7 +17,7 @@ enum Result<T> {
 class ServiceProvider<T: Service> {
     var urlSession = URLSession.shared
 
-    init() { }
+    init() {}
 
     func load(service: T, completion: @escaping (Result<Data>) -> Void) {
         call(service.urlRequest, completion: completion)
@@ -26,16 +26,15 @@ class ServiceProvider<T: Service> {
     func load<U>(service: T, decodeType: U.Type, completion: @escaping (Result<U>) -> Void) where U: Decodable {
         call(service.urlRequest) { result in
             switch result {
-            case .success(let data):
+            case let .success(data):
                 let decoder = JSONDecoder()
                 do {
                     let resp = try decoder.decode(decodeType, from: data)
                     completion(.success(resp))
-                }
-                catch {
+                } catch {
                     completion(.failure(error))
                 }
-            case .failure(let error):
+            case let .failure(error):
                 completion(.failure(error))
             case .empty:
                 completion(.empty)
@@ -46,7 +45,7 @@ class ServiceProvider<T: Service> {
 
 extension ServiceProvider {
     private func call(_ request: URLRequest, deliverQueue: DispatchQueue = DispatchQueue.main, completion: @escaping (Result<Data>) -> Void) {
-        urlSession.dataTask(with: request) { (data, _, error) in
+        urlSession.dataTask(with: request) { data, _, error in
             if let error = error {
                 deliverQueue.async {
                     completion(.failure(error))
@@ -60,6 +59,6 @@ extension ServiceProvider {
                     completion(.empty)
                 }
             }
-            }.resume()
+        }.resume()
     }
 }

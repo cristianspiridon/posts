@@ -14,7 +14,8 @@ extension UIColor {
     static var primaryDark: UIColor {
         return UIColor(hexString: "#595959")
     }
+
     static var primaryRed: UIColor {
-         return UIColor(hexString: "#F43082")
+        return UIColor(hexString: "#F43082")
     }
 }
