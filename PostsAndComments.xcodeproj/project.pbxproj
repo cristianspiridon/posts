@@ -3,12 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2D55225C5EA7F7A4694AC3ED /* Pods_PostsAndComments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5AF4C8C342C3A1D1A543CD /* Pods_PostsAndComments.framework */; };
 		6C0F102EC7CA1654370F9100 /* Pods_PostsAndCommentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9AC14C95C0D6C9F0E73B7B /* Pods_PostsAndCommentsTests.framework */; };
+		7643474C23A79C0400332D63 /* PostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643474B23A79C0400332D63 /* PostsTableViewController.swift */; };
+		7643474E23A79D7700332D63 /* PostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7643474D23A79D7700332D63 /* PostsTableViewCell.swift */; };
 		7654DEDE23A7975400D62179 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654DEDD23A7975400D62179 /* AppDelegate.swift */; };
 		7654DEE023A7975400D62179 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654DEDF23A7975400D62179 /* SceneDelegate.swift */; };
 		7654DEE523A7975400D62179 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7654DEE323A7975400D62179 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		0B5AF4C8C342C3A1D1A543CD /* Pods_PostsAndComments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostsAndComments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BC69E8FDCBD8B2D9F967E /* Pods-PostsAndComments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndComments.release.xcconfig"; path = "Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments.release.xcconfig"; sourceTree = "<group>"; };
+		7643474B23A79C0400332D63 /* PostsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewController.swift; sourceTree = "<group>"; };
+		7643474D23A79D7700332D63 /* PostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTableViewCell.swift; sourceTree = "<group>"; };
 		7654DEDA23A7975400D62179 /* PostsAndComments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostsAndComments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7654DEDD23A7975400D62179 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7654DEDF23A7975400D62179 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 		7654DEDC23A7975400D62179 /* PostsAndComments */ = {
 			isa = PBXGroup;
 			children = (
+				76DE1AA923A79AEE00975698 /* Persistence */,
 				7654DEFF23A7977000D62179 /* Branding */,
 				7654DF0123A7977D00D62179 /* Network Layer */,
 				7654DF0323A7979C00D62179 /* Scene */,
@@ -126,8 +131,17 @@
 		7654DF0423A797AA00D62179 /* posts */ = {
 			isa = PBXGroup;
 			children = (
+				7643474B23A79C0400332D63 /* PostsTableViewController.swift */,
+				7643474D23A79D7700332D63 /* PostsTableViewCell.swift */,
 			);
 			path = posts;
+			sourceTree = "<group>";
+		};
+		76DE1AA923A79AEE00975698 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
 			sourceTree = "<group>";
 		};
 		C0A510A719F1DC30F6529DA2 /* Pods */ = {
@@ -138,7 +152,6 @@
 				E966ECC7A29887AD331C9BEA /* Pods-PostsAndCommentsTests.debug.xcconfig */,
 				B6820AB8A9299D7ABD4CB0CA /* Pods-PostsAndCommentsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -322,7 +335,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7654DEDE23A7975400D62179 /* AppDelegate.swift in Sources */,
+				7643474C23A79C0400332D63 /* PostsTableViewController.swift in Sources */,
 				7654DEE023A7975400D62179 /* SceneDelegate.swift in Sources */,
+				7643474E23A79D7700332D63 /* PostsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

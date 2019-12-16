@@ -9,10 +9,6 @@
 import Foundation
 import UIKit
 
-// we use style as singleton class, because it's a shared class to make the styling happening.
-// it's not marked as "final class" as to change style we need to extend the style class, so we decouple our brand
-// from the styling arhitecture system
-
 public class Style {
     /// making this static makes sure that we are thread safe and no other copies are found on different threads
     public static let shared = Style(backgroundColor: .white, attributesForStyle: { $0.lennyAppStyleBuilder })
