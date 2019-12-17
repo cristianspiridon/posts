@@ -29,7 +29,6 @@ class CommentsInteractor: CommentsBusinessLogic, CommentsDataStore {
     }
 
     weak var viewController: CommentsDisplayLogic?
-    var worker: CommentsWorker?
     private var comments = [Comment]()
 
     var numberOfRowsInSection: Int {

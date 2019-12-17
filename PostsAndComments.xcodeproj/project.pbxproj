@@ -33,7 +33,6 @@
 		76598AB623A80A5400038CD5 /* PostTableRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AB023A80A5400038CD5 /* PostTableRouter.swift */; };
 		76598AB823A80A5400038CD5 /* PostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AB223A80A5400038CD5 /* PostTableViewController.swift */; };
 		76598AB923A80A5400038CD5 /* PostTableInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76598AB323A80A5400038CD5 /* PostTableInteractor.swift */; };
-		7662E22A23A8245C00CC671C /* CommentsWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22423A8245C00CC671C /* CommentsWorker.swift */; };
 		7662E22B23A8245C00CC671C /* CommentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22523A8245C00CC671C /* CommentsRouter.swift */; };
 		7662E22C23A8245C00CC671C /* CommentsModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22623A8245C00CC671C /* CommentsModels.swift */; };
 		7662E22D23A8245C00CC671C /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22723A8245C00CC671C /* CommentsViewController.swift */; };
@@ -84,7 +83,6 @@
 		76598AB023A80A5400038CD5 /* PostTableRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableRouter.swift; sourceTree = "<group>"; };
 		76598AB223A80A5400038CD5 /* PostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewController.swift; sourceTree = "<group>"; };
 		76598AB323A80A5400038CD5 /* PostTableInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableInteractor.swift; sourceTree = "<group>"; };
-		7662E22423A8245C00CC671C /* CommentsWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsWorker.swift; sourceTree = "<group>"; };
 		7662E22523A8245C00CC671C /* CommentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsRouter.swift; sourceTree = "<group>"; };
 		7662E22623A8245C00CC671C /* CommentsModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsModels.swift; sourceTree = "<group>"; };
 		7662E22723A8245C00CC671C /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
@@ -249,7 +247,6 @@
 				7662E22723A8245C00CC671C /* CommentsViewController.swift */,
 				76ED6EE323A8396C007A9AF9 /* CommentsTableViewCell.swift */,
 				7662E22823A8245C00CC671C /* CommentsInteractor.swift */,
-				7662E22423A8245C00CC671C /* CommentsWorker.swift */,
 				7662E22623A8245C00CC671C /* CommentsModels.swift */,
 				7662E22523A8245C00CC671C /* CommentsRouter.swift */,
 			);
@@ -491,7 +488,6 @@
 				76ED6EE823A846A0007A9AF9 /* AdorableAPIWorker.swift in Sources */,
 				7643477023A7AEEB00332D63 /* Post.swift in Sources */,
 				7643476723A7A32100332D63 /* RealmProvider.swift in Sources */,
-				7662E22A23A8245C00CC671C /* CommentsWorker.swift in Sources */,
 				7643476023A7A1FD00332D63 /* StyleColors.swift in Sources */,
 				76598AB823A80A5400038CD5 /* PostTableViewController.swift in Sources */,
 				76598AA223A8007800038CD5 /* Comment.swift in Sources */,
