@@ -1,4 +1,5 @@
 PODS:
+  - Nimble (8.0.4)
   - PromiseKit (6.11.0):
     - PromiseKit/CorePromise (= 6.11.0)
     - PromiseKit/Foundation (= 6.11.0)
@@ -8,6 +9,7 @@ PODS:
     - PromiseKit/CorePromise
   - PromiseKit/UIKit (6.11.0):
     - PromiseKit/CorePromise
+  - Quick (2.2.0)
   - Realm (3.20.0):
     - Realm/Headers (= 3.20.0)
   - Realm/Headers (3.20.0)
@@ -17,26 +19,32 @@ PODS:
   - SwiftLint (0.36.0)
 
 DEPENDENCIES:
+  - Nimble
   - PromiseKit
+  - Quick
   - RealmSwift
   - SwiftFormat/CLI
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - Nimble
     - PromiseKit
+    - Quick
     - Realm
     - RealmSwift
     - SwiftFormat
     - SwiftLint
 
 SPEC CHECKSUMS:
+  Nimble: 18d5360282923225d62b09d781f63abc1a0111fc
   PromiseKit: e4863d06976e7dee5e41c04fc7371c16b3600292
+  Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   Realm: 8b2ca5bc6479a91f379b6b42b5922e396cd5ba5a
   RealmSwift: 1949ef26a279e1845bd51d591b9103adfcd121df
   SwiftFormat: d548b3585a6dbe64390177b386e95375b8c300b6
   SwiftLint: fc9859e4e1752340664851f667bb1898b9c90114
 
-PODFILE CHECKSUM: 57c9493ddffc414ec668b845e3c92f40fb7587ce
+PODFILE CHECKSUM: fdf9fcf6ee086b293d761e5f19a692c3c2acebe5
 
 COCOAPODS: 1.8.4

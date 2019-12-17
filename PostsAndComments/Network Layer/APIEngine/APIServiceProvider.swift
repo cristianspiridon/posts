@@ -42,9 +42,7 @@ class ServiceProvider<T: Service> {
             }
         }
     }
-}
 
-extension ServiceProvider {
     func call(_ request: URLRequest, deliverQueue: DispatchQueue = DispatchQueue.main, completion: @escaping (Result<Data>) -> Void) {
         urlSession.dataTask(with: request) { data, _, error in
             if let error = error {
