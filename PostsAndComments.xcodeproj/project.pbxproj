@@ -39,6 +39,8 @@
 		7662E22D23A8245C00CC671C /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22723A8245C00CC671C /* CommentsViewController.swift */; };
 		7662E22E23A8245C00CC671C /* CommentsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7662E22823A8245C00CC671C /* CommentsInteractor.swift */; };
 		76ED6EE423A8396C007A9AF9 /* CommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED6EE323A8396C007A9AF9 /* CommentsTableViewCell.swift */; };
+		76ED6EE623A845C0007A9AF9 /* AdorableAvatarsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED6EE523A845C0007A9AF9 /* AdorableAvatarsAPI.swift */; };
+		76ED6EE823A846A0007A9AF9 /* AdorableAPIWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ED6EE723A846A0007A9AF9 /* AdorableAPIWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +90,8 @@
 		7662E22723A8245C00CC671C /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		7662E22823A8245C00CC671C /* CommentsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsInteractor.swift; sourceTree = "<group>"; };
 		76ED6EE323A8396C007A9AF9 /* CommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTableViewCell.swift; sourceTree = "<group>"; };
+		76ED6EE523A845C0007A9AF9 /* AdorableAvatarsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdorableAvatarsAPI.swift; sourceTree = "<group>"; };
+		76ED6EE723A846A0007A9AF9 /* AdorableAPIWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdorableAPIWorker.swift; sourceTree = "<group>"; };
 		8A9AC14C95C0D6C9F0E73B7B /* Pods_PostsAndCommentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostsAndCommentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9947EAEC395E60252AC4E10A /* Pods-PostsAndComments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndComments.debug.xcconfig"; path = "Target Support Files/Pods-PostsAndComments/Pods-PostsAndComments.debug.xcconfig"; sourceTree = "<group>"; };
 		B6820AB8A9299D7ABD4CB0CA /* Pods-PostsAndCommentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsAndCommentsTests.release.xcconfig"; path = "Target Support Files/Pods-PostsAndCommentsTests/Pods-PostsAndCommentsTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				7643475523A7A1FD00332D63 /* JsonplaceholderAPI.swift */,
+				76ED6EE523A845C0007A9AF9 /* AdorableAvatarsAPI.swift */,
 			);
 			path = Configurations;
 			sourceTree = "<group>";
@@ -233,6 +238,7 @@
 			children = (
 				76598A9D23A7E6B300038CD5 /* PostsAPIWorker.swift */,
 				76598A9F23A7FE4600038CD5 /* CommentsAPIWorker.swift */,
+				76ED6EE723A846A0007A9AF9 /* AdorableAPIWorker.swift */,
 			);
 			path = Workers;
 			sourceTree = "<group>";
@@ -474,6 +480,7 @@
 				7643476223A7A1FD00332D63 /* StyleBuilder.swift in Sources */,
 				7654DEDE23A7975400D62179 /* AppDelegate.swift in Sources */,
 				76598A9E23A7E6B300038CD5 /* PostsAPIWorker.swift in Sources */,
+				76ED6EE623A845C0007A9AF9 /* AdorableAvatarsAPI.swift in Sources */,
 				7643475C23A7A1FD00332D63 /* APIService.swift in Sources */,
 				7662E22B23A8245C00CC671C /* CommentsRouter.swift in Sources */,
 				7643475D23A7A1FD00332D63 /* APIServiceProvider.swift in Sources */,
@@ -481,6 +488,7 @@
 				7643476323A7A1FD00332D63 /* Style.swift in Sources */,
 				7643474E23A79D7700332D63 /* PostsTableViewCell.swift in Sources */,
 				7643476623A7A32100332D63 /* RealmService.swift in Sources */,
+				76ED6EE823A846A0007A9AF9 /* AdorableAPIWorker.swift in Sources */,
 				7643477023A7AEEB00332D63 /* Post.swift in Sources */,
 				7643476723A7A32100332D63 /* RealmProvider.swift in Sources */,
 				7662E22A23A8245C00CC671C /* CommentsWorker.swift in Sources */,

@@ -6,10 +6,16 @@
 //  Copyright © 2019 cs. All rights reserved.
 //
 
+import PromiseKit
 import UIKit
 
 class CommentsTableViewCell: UITableViewCell {
-    @IBOutlet var profileImage: UIImageView!
+    @IBOutlet var profileImage: UIImageView! {
+        didSet {
+            profileImage.layer.cornerRadius = profileImage.layer.bounds.height / 2
+        }
+    }
+
     @IBOutlet var titleLabel: UILabel! {
         didSet {
             titleLabel.text = ""
@@ -32,8 +38,12 @@ class CommentsTableViewCell: UITableViewCell {
             if let body = data?.body {
                 bodyTextView.text = body
             }
+
+            loadProfileImage()
         }
     }
+
+    private var avatarAPIWorker = AdorableAPIWorker()
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -44,5 +54,14 @@ class CommentsTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+
+    func loadProfileImage() {
+        guard let email = data?.email else {
+            return
+        }
+        avatarAPIWorker.loadAvatarImage(with: email) { [weak self] image in
+            self?.profileImage.image = image
+        }
     }
 }
