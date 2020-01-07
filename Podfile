@@ -11,8 +11,8 @@ target 'PostsAndComments' do
   pod 'SwiftFormat/CLI'
   pod 'RealmSwift'
   pod 'PromiseKit'
-  pod 'Quick'
-  pod 'Nimble'
+#  pod 'Quick'
+#  pod 'Nimble'
 
   target 'PostsAndCommentsTests' do
     inherit! :search_paths
